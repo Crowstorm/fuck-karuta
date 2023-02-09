@@ -24,7 +24,9 @@ function App() {
       <button style={{ width: '60%', height: 30 }} onClick={copyToClipboard}>Copy to fucking clipboard</button>
       <div id='output' style={{ width: '60%' }}>
         {codes.map(code => {
-          return `${code},`
+          if (code) {
+            return `${code},`
+          }
         })}
       </div>
       {/* <div>{codes}</div> */}

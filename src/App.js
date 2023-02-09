@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import TextArea from './components/TextArea';
 
 function App() {
+  const [codes, setCodes] = useState([])
+
+  const copyToClipboard = () => {
+    const copyText = document.getElementById("output");
+    console.log({ copyText })
+
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.innerHTML);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Official Fuck Karuta App</h1>
+      <h3>Just paste the fucking "kc" output here and I will give you the card codes with fucking commas</h3>
+      <TextArea
+        setCodes={setCodes}
+      />
+
+      <button style={{ width: '60%', height: 30 }} onClick={copyToClipboard}>Copy to fucking clipboard</button>
+      <div id='output' style={{ width: '60%' }}>
+        {codes.map(code => {
+          return `${code},`
+        })}
+      </div>
+      {/* <div>{codes}</div> */}
     </div>
   );
 }

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fuck-karuta/static/css/main.4c69bb05.css",
+    "main.js": "/fuck-karuta/static/js/main.32bd7b06.js",
+    "index.html": "/fuck-karuta/index.html",
+    "main.4c69bb05.css.map": "/fuck-karuta/static/css/main.4c69bb05.css.map",
+    "main.32bd7b06.js.map": "/fuck-karuta/static/js/main.32bd7b06.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c69bb05.css",
+    "static/js/main.32bd7b06.js"
+  ]
+}

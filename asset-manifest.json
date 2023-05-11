@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fuck-karuta/static/css/main.4c69bb05.css",
-    "main.js": "/fuck-karuta/static/js/main.bdd67996.js",
+    "main.js": "/fuck-karuta/static/js/main.b9ee9c94.js",
     "index.html": "/fuck-karuta/index.html",
     "main.4c69bb05.css.map": "/fuck-karuta/static/css/main.4c69bb05.css.map",
-    "main.bdd67996.js.map": "/fuck-karuta/static/js/main.bdd67996.js.map"
+    "main.b9ee9c94.js.map": "/fuck-karuta/static/js/main.b9ee9c94.js.map"
   },
   "entrypoints": [
     "static/css/main.4c69bb05.css",
-    "static/js/main.bdd67996.js"
+    "static/js/main.b9ee9c94.js"
   ]
 }

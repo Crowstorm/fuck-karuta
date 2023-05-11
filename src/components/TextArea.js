@@ -7,7 +7,7 @@ const TextArea = ({ setCodes }) => {
         const lines = value.split(/\r?\n/);
         const codes = lines.map(line => {
             const [, spaceOrCode, code] = line.split(" ");
-            if (spaceOrCode === " ") {
+            if (spaceOrCode === "") {
                 return code;
             } else {
                 return spaceOrCode
